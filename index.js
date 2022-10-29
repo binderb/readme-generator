@@ -53,13 +53,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName,data, (err) => {
+    console.log( err ? err : "success!");
+  })
+}
 
 // TODO: Create a function to initialize app
 function init() {
   inq.prompt(questions)
   .then(response => {
-    
+    writeToFile('sample_readme.md',JSON.stringify(response));
   });
 }
 

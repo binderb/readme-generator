@@ -6,48 +6,48 @@ const inq = require('inquirer');
 const questions = [
   {
     type: 'input',
-    message: '(1 of 9) What is your project title?',
+    message: `\x1b[31m(1 of 9)\x1b[0m What is your project title?`,
     name: 'title'
   },
   {
     type: 'input',
-    message: '(2 of 9) Enter a description for your project:',
+    message: '\x1b[31m(2 of 9)\x1b[0m Enter a description for your project:',
     name: 'description'
   },
   {
     type: 'input',
-    message: '(3 of 9) Enter some installation instructions for your project:',
+    message: '\x1b[31m(3 of 9)\x1b[0m Enter some installation instructions for your project:',
     name: 'installation'
   },
   {
     type: 'input',
-    message: '(4 of 9) Enter some usage information for your project:',
+    message: '\x1b[31m(4 of 9)\x1b[0m Enter some usage information for your project:',
     name: 'usage'
   },
   {
     type: 'input',
-    message: '(5 of 9) Enter contribution guidelines your project:',
+    message: '\x1b[31m(5 of 9)\x1b[0m Enter contribution guidelines your project:',
     name: 'contribution'
   },
   {
     type: 'input',
-    message: '(6 of 9) Enter the tests for your project:',
+    message: '\x1b[31m(6 of 9)\x1b[0m Enter the tests for your project:',
     name: 'tests'
   },
   {
     type: 'list',
-    message: '(7 of 9) What license should your project have?',
+    message: '\x1b[31m(7 of 9)\x1b[0m What license should your project have?',
     choices: ['MIT','GnuPL','(None)'],
     name: 'license'
   },
   {
     type: 'input',
-    message: '(8 of 9) Enter your GitHub username:',
+    message: '\x1b[31m(8 of 9)\x1b[0m Enter your GitHub username:',
     name: 'github'
   },
   {
     type: 'input',
-    message: '(9 of 9) Enter your email:',
+    message: '\x1b[31m(9 of 9)\x1b[0m Enter your email:',
     name: 'email'
   }
 ];

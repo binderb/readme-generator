@@ -65,6 +65,8 @@ function init() {
   .then(response => {
     let badge;
     let license_description;
+    // This statement will provide premade content for the README
+    // depending on the user's choice of license.
     switch (response.license) {
       case "MIT":
         badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -81,6 +83,8 @@ function init() {
       default:
         break;
     }
+    // This is a large template literal that provides the entire
+    // structure for the SAMPLE.md output file that will be generated.
     const readme = `
 # ${response.title.trim() == '' ? 'Untitled Project' : response.title}
 
@@ -88,6 +92,7 @@ ${badge}
 
 ## Description
 ${response.description}
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)

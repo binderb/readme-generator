@@ -25,4 +25,4 @@ Here is some sample text to describe how contributions would be made to the proj
 ## Tests
 Here is some sample text to show the user how to run tests within my project. Perhaps those tests are implemented via the **Jest** package, and therefore the user should execute `npm run test` on the console.
 ## Questions
-To contact the developer, please check out [binderb](https://github.com/binderb) on GitHub, or contact them at [ben.binder11@gmail.com](mailto:ben.binder11@gmail.com).
+To contact the developer, please check out [binderb](https://github.com/binderb) on GitHub, or contact them at [binderb@example.com](mailto:binderb@example.com).
